@@ -72,6 +72,7 @@
 - [ ]  Linters setup
 - [ ]  React setup
 - [ ]  Initialize Bookstore app with components (React only)
+- [ ]  Add reducers and actions.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,7 +158,6 @@ To check for js errors run:
 
 > The following features will add to the project.
 - [ ]  Deploy the App
-- [ ]  Add reducers and actions.
 - [ ]  Use Redux in React components.
 - [ ]  Connect to API.
 - [ ]  Styling.
