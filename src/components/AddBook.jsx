@@ -1,45 +1,37 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { uuid } from 'uuidv4';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
-const AddBook = (props) => {
-  const { addBooks } = props;
-
-  const [newBook, setNewBook] = useState({
-    title: '',
-    author: '',
-  });
-
-  const handleChange = (e) => {
-    setNewBook({
-      ...newBook,
-      [e.target.name]: e.target.value,
-    });
-  };
+const AddBook = () => {
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const addBookToList = (e) => {
     e.preventDefault();
-    addBooks(newBook.title, newBook.author);
-    setNewBook({
-      title: '',
-      author: '',
-    });
+    dispatch(addBook({
+      id: uuid,
+      title,
+      author,
+      category: 'Fiction',
+    }));
+
+    setTitle('');
+    setAuthor('');
   };
 
   return (
     <section>
-      <form>
+      <form onSubmit={addBookToList}>
         <div>
-          <input type="text" name="title" id="name" value={newBook.title} placeholder="Title" onChange={handleChange} required />
-          <input type="text" name="author" id="author" value={newBook.author} placeholder="Author" onChange={handleChange} required />
+          <input type="text" name="title" id="name" value={title} placeholder="Title" onChange={(e) => setTitle(e.target.value)} required />
+          <input type="text" name="author" id="author" value={author} placeholder="Author" onChange={(e) => setAuthor(e.target.value)} required />
+          <button type="submit"> Add Book </button>
         </div>
-        <button type="submit" onClick={addBookToList}> Add Book </button>
       </form>
     </section>
   );
-};
-
-AddBook.propTypes = {
-  addBooks: PropTypes.func.isRequired,
 };
 
 export default AddBook;
