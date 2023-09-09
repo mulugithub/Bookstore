@@ -8,10 +8,10 @@ const Navbar = () => (
       <div className="logo">Bookstore CMS</div>
       <ul>
         <li>
-          <Link to="/">Books</Link>
+          <Link className="active" to="/">BOOKS</Link>
         </li>
         <li>
-          <Link to="/Categories"> Categories</Link>
+          <Link to="/Categories">CATEGORIES</Link>
         </li>
       </ul>
       <div className="user-icon oval"><FaUser /></div>
