@@ -75,6 +75,7 @@
 - [ ]  Add reducers and actions.
 - [ ]  Use Redux in React components.
 - [ ]  Connect to API.
+- [ ]  Styling.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,7 +114,7 @@ Clone this repository to your desired folder:
 
 To run the project, open the project using a live server from VS code editor.
 ```sh
-  cd math-magician
+  cd bookstore
   code .
   npm install
 ```
@@ -160,8 +161,6 @@ To check for js errors run:
 
 > The following features will add to the project.
 - [ ]  Deploy the App
-- [ ]  Styling.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
