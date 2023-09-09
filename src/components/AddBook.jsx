@@ -32,19 +32,18 @@ const AddBook = () => {
   ];
 
   return (
-    <section>
+    <section className="add-book-section">
+      <div className="form-title">ADD NEW BOOK</div>
       <form onSubmit={addBookToList}>
-        <div>
-          <input type="text" name="title" id="name" value={title} placeholder="Title" onChange={(e) => setTitle(e.target.value)} required />
-          <input type="text" name="author" id="author" value={author} placeholder="Author" onChange={(e) => setAuthor(e.target.value)} required />
-          <select value={category} onChange={(e) => setCategory(e.target.value)} required>
-            <option value="" disabled>Select a category</option>
-            {Categories.map((categorie) => (
-              <option key={categorie} value={categorie}>{categorie}</option>
-            ))}
-          </select>
-          <button type="submit"> Add Book </button>
-        </div>
+        <input type="text" name="title" id="name" value={title} placeholder="Book title" onChange={(e) => setTitle(e.target.value)} required />
+        <input type="text" name="author" id="author" value={author} placeholder="Book author" onChange={(e) => setAuthor(e.target.value)} required />
+        <select value={category} onChange={(e) => setCategory(e.target.value)} required>
+          <option value="" disabled>Select a category</option>
+          {Categories.map((categorie) => (
+            <option key={categorie} value={categorie}>{categorie}</option>
+          ))}
+        </select>
+        <button className="add-btn" type="submit"> Add Book </button>
       </form>
     </section>
   );
