@@ -92,3 +92,177 @@ nav div.user-icon {
   border: solid 1px #ece9e9;
   border-radius: 50%;
 }
+
+/* Book list container */
+.books-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
+.books-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.books-card-wrapper .book-card {
+  background-color: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+}
+
+.book-card .book-detail {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.book-detail .book-category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--title-color);
+}
+
+.book-detail .book-title {
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--title-color);
+}
+
+.book-actions-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.comments,
+.remove,
+.edit,
+.author {
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: normal;
+  color: var(--second-blue-color);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.book-actions-container .actions-separate-line {
+  height: 1.5rem;
+  margin: 0.75rem 1.063rem 0 0.938rem;
+  border: solid 1px var(--line-color);
+}
+
+.book-card .line {
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  border: solid 1px var(--line-color);
+}
+
+.book-card .book-progress {
+  display: flex;
+  gap: 1rem;
+}
+
+.book-progress .text-peogress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Percent-Complete {
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--title-color);
+}
+
+.Complete-text {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: var(--title-color);
+}
+
+.book-card .book-chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.book-chapter .update-progress {
+  width: 11.5rem;
+  height: 2.063rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: var(--primary-blue-color);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+}
+
+.book-chapter .current-chapter {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.book-chapter .current-lesson {
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: var(--title-color);
+}

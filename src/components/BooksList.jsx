@@ -18,8 +18,8 @@ const BooksList = () => {
   }
 
   return (
-    <div>
-      <div>
+    <section className="books-container">
+      <ul className="books-card-wrapper">
         { Object.keys(books).length === 0
           && <h3>No books found.</h3>}
         {' '}
@@ -34,10 +34,10 @@ const BooksList = () => {
             }}
           />
         ))}
-
-        <AddBook />
-      </div>
-    </div>
+      </ul>
+      <hr />
+      <AddBook />
+    </section>
   );
 };
 
